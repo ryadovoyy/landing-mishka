@@ -1,1 +1,1 @@
-# [mishka](https://ryadovoyy.github.io/landing-mishka)
+# [landing-mishka](https://ryadovoyy.github.io/landing-mishka)
