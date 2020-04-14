@@ -1,0 +1,120 @@
+.input {
+  margin-top: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover {
+    .input__field {
+      border-color: $accent;
+    }
+
+    .input__icon {
+      fill: $accent;
+    }
+  }
+}
+
+.input__field {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 18px;
+  font-size: 17px;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid $soft-gray;
+  color: $soft-gray;
+  transition: 0.2s;
+
+  &--contact {
+    padding-right: 54px !important;
+  }
+
+  &:invalid {
+    border-color: $form-error;
+  }
+
+  &::placeholder {
+    color: $placeholder-gray;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  display: block;
+  fill: $form-gray;
+  cursor: text;
+  transition: 0.2s;
+
+  &--phone {
+    right: 8px;
+    bottom: 17px;
+    width: 26px;
+    height: 25px;
+  }
+
+  &--mail {
+    right: 4px;
+    bottom: 9px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .input {
+    margin-top: 17px;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .input__text {
+    margin-top: 22px;
+    margin-right: 27px;
+  }
+
+  .input__field {
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    font-size: 19px;
+
+    &--name {
+      flex-grow: 1;
+    }
+
+    &--contact {
+      padding-right: 72px !important;
+      flex-grow: 1;
+      background-color: $bg-dark-gray;
+    }
+  }
+
+  .input__icon {
+    &--phone {
+      right: 25px;
+    }
+
+    &--mail {
+      right: 21px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .input__field--contact {
+    padding-right: 54px !important;
+  }
+
+  .input__icon {
+    &--phone {
+      right: 6px;
+    }
+
+    &--mail {
+      right: 3px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.textarea {
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  display: block;
+  width: 100%;
+  height: 142px;
+  line-height: 18px;
+  font-size: 17px;
+  outline: 0;
+  resize: none;
+  border: 2px solid $soft-gray;
+  color: $soft-gray;
+  transition: 0.2s;
+
+  &:invalid {
+    border-color: $form-error;
+  }
+
+  &:hover {
+    border-color: $accent;
+  }
+
+  &::placeholder {
+    color: $placeholder-gray;
+  }
+}
+
+@media #{$tablet-widths} {
+  .textarea {
+    height: 142px;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,41 @@
+.switch {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+  &:hover::before {
+    border-color: $accent;
+  }
+
+  &:active::before {
+    border-color: $form-gray;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 40px;
+    min-width: 40px;
+    height: 41px;
+    border: 2px solid $soft-gray;
+    transition: 0.2s;
+  }
+}
+
+.switch__input {
+  display: none;
+}
+
+.switch__text {
+  margin-left: 23px;
+}
+
+@media #{$tablet-widths} {
+  .switch::before {
+    height: 52px;
+  }
+
+  .switch__text {
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,155 @@
+.page-footer {
+  background-color: $bg-dark-gray;
+}
+
+.page-footer__wrapper {
+  @include container-fluid();
+
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $footer-line-gray;
+}
+
+.page-footer__link {
+  display: block;
+
+  &:hover .page-footer__icon {
+    fill: $teal;
+  }
+
+  &:active .page-footer__icon {
+    fill: $teal;
+    opacity: 0.3;
+  }
+
+  &--mishka {
+    margin-right: auto;
+    width: 102px;
+  }
+
+  &--left {
+    margin-right: 39px;
+  }
+
+  &--right {
+    margin-left: 39px;
+  }
+}
+
+.page-footer__icon {
+  display: block;
+  fill: $heading-gray;
+  transition: 0.2s;
+
+  &--mishka {
+    width: 102px;
+    height: 34px;
+  }
+
+  &--insta {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb {
+    width: 16px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 24px;
+    height: 20px;
+  }
+}
+
+.page-footer__design {
+  padding-top: 22px;
+  padding-bottom: 23px;
+}
+
+.page-footer__reference {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+
+  &:hover .page-footer__academy {
+    fill: $teal;
+  }
+
+  &:active {
+    .page-footer__academy {
+      fill: $teal;
+      opacity: 0.3;
+    }
+
+    .page-footer__text {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__text {
+  margin: 0;
+  margin-right: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.page-footer__academy {
+  display: block;
+  width: 27px;
+  height: 34px;
+  fill: $accent;
+  transition: 0.2s;
+}
+
+@media #{$tablet-widths} {
+  .page-footer__wrapper {
+    padding-top: 51px;
+    padding-right: 0;
+    padding-bottom: 51px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 33.33%;
+  }
+
+  .page-footer__social {
+    padding: 0;
+    width: 33.33%;
+    border-bottom: 0;
+  }
+
+  .page-footer__design {
+    padding: 0;
+    width: 33.33%;
+  }
+
+  .page-footer__reference {
+    margin-right: 0;
+  }
+
+  .page-footer__academy {
+    margin-top: 7px;
+  }
+}

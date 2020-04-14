@@ -1,0 +1,28 @@
+.btn {
+  padding-top: 12px;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  border: 2px solid $soft-gray;
+  outline: 0;
+  background-color: $white;
+  color: $soft-gray;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $soft-gray;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}

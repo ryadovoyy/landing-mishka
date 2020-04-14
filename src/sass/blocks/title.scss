@@ -1,0 +1,23 @@
+.title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+
+  &--page {
+    font-size: 25px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
